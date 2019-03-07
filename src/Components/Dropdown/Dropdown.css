@@ -1,0 +1,44 @@
+.dropdownContainer{
+  margin: auto;
+}
+.dropdownButton {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 10px 15px;
+  border-radius: 30px;
+  background: none;
+  border: 1px solid #dadee7;
+}
+.dropdownButton span,
+.dropdownMenu li span {
+  color: #939fb9;
+  font-weight: 400;
+}
+.dropdownButton img {
+  margin-left: 30px;
+}
+.dropdownMenu ul {
+  display: none;  
+}
+.dropdownMenuActive li {
+  border: 1px solid #dadee7;   
+  font-weight: 700;
+  font-size: 12px;
+  padding: 5px 5px;
+  background: none;  
+  background: white;
+}
+.dropdownMenuActive li:hover {
+  cursor: pointer;
+  background: lightgrey;
+}
+.dropdownMenuActive ul {
+  z-index: 100;      
+  display: block;  
+  height: 0;
+  margin: 0;  
+  font-size: 14px;
+  padding: 0 10px;
+  list-style: none;
+}

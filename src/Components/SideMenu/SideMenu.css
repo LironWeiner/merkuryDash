@@ -1,0 +1,30 @@
+.SideContainerHidden {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.SideContainer {
+  padding-top: 6px;
+  transition: 0.3s all;
+  opacity: 1;
+  transform: translateX(0%);
+  display: flex;
+  flex-direction: column;
+  background: #0e1a35;
+  width: 300px;
+  height: 100vmax;
+}
+.SideContainerExit {
+  transition: 0.2s all;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.logo img {
+  width: 150px;
+  padding: 20px 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .SideContainer {
+    padding-bottom: 100%;
+  }
+}

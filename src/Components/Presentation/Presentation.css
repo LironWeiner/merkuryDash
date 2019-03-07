@@ -1,0 +1,24 @@
+.presentationContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d4d9e3;
+  padding: 5px 30px;  
+  margin-bottom: 40px;     
+}
+.presentationContainer h2 {
+  color: #8492af;
+  margin-right: auto;
+}
+.presentationRow1 {
+  display: flex;
+}
+.presentationDropButton {
+  margin: auto 0 auto auto;
+}
+.presentationRow2 {
+  z-index: -1;
+  margin-bottom: 0.83em;
+}
+.presentationRow2 img {  
+  
+}

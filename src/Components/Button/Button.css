@@ -1,0 +1,41 @@
+.sideButtonWithIcon {
+  padding: 30px 40px;
+}
+.sideButtonWithIcon a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+.sideButtonWithIcon:hover {
+  transition: 0.3s all;
+  border-left: 8px solid #5584ff;
+  padding-left: 32px;
+  background: #122143;
+}
+.sideButtonWithIcon img {
+  width: 20px;
+  margin-right: 10px;
+}
+.roundButtonWithIcon {
+  display: flex;  
+  background: #5584ff;
+  border-radius: 30px;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin: auto;
+}
+.roundButtonWithIcon img {   
+  object-fit: contain;
+  margin-right: 10px; 
+}
+.roundButtonWithIcon{
+  font-size: 14px;
+  color: white;
+  margin: auto;
+}
+.roundButtonWithIcon a {
+  font-size: 14px;
+  color: white;
+  margin: auto;
+}

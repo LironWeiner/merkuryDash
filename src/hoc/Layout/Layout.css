@@ -1,0 +1,36 @@
+.layoutContainer {
+  display: flex;
+}
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contentContainer h1 {
+  margin-top: 40px;
+  font-weight: 600;
+}
+.title {
+  align-self: center;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+.listItem1,
+.listItem2,
+.listItem3,
+.listItem4,
+.listItem5,
+.mainContainerRow2 {
+  display: flex;
+  margin-right: 30px;   
+}
+
+@media screen and (max-width: 568px) {
+  .layoutContainer {
+    width: fit-content;
+  }  
+}

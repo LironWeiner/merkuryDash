@@ -1,0 +1,93 @@
+.navbarContainer {
+  border: 1px solid #d4d9e3;
+  display: flex;
+  padding: 20px;
+  align-content: center;   
+}
+.arrowLeftVisible {
+  margin-right: 6px;
+  margin-top: 5px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 6px solid #5584ff;
+}
+.menuButtonContainer {
+  display: flex;
+  margin: auto;
+  margin-left: 40px;
+  margin-right: 30px;
+  height: 100%;
+}
+.menuButtonContainer img{
+  width: 25px;
+  height: 20px;
+  object-fit: contain;
+  cursor: pointer;
+}
+.search{
+  margin: auto 5px;
+  width: 25px;
+  height: 20px;
+  object-fit: contain;
+  cursor: pointer;
+}
+.navbarLeft {
+  display: flex;
+  margin: auto 0;
+}
+.navbarLeft img {
+  width: 25px;
+  height: 20px;
+  object-fit: contain;
+  cursor: pointer;
+}
+.navbarRight {
+  display: flex;  
+  align-content: flex-end;
+  margin: auto 5px auto auto;
+}
+.navbarRight img {
+  cursor: pointer;
+}
+.navbarRight img:nth-child(2) {
+  margin: auto 15px auto 30px;
+  width: 30px;
+  height: 20px;
+}
+.notificationsContainer {
+  margin: auto 15px auto;
+  width: 30px;
+  height: 25px;
+  object-fit: contain;
+}
+.notificationsContainer span {
+  position: relative;
+  top: -40px;
+  left: 12px;
+  display: block;
+  background: #5584ff;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  width: 14px;
+  border-radius: 50%;
+  border: 0.5px solid white;
+}
+.navbarRight img:nth-child(4) {
+  margin: auto 40px auto 15px;
+  width: 40px;
+}
+
+.arrowDown {
+  margin: auto;  
+  cursor: pointer;
+  position: relative;
+  left: -35px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid black;
+}
