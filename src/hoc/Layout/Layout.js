@@ -35,51 +35,42 @@ class Layout extends Component {
               openSideMenuHandler={this.openSideMenuHandler}
               isVisible={this.state.isSideMenuVisible}
             />
-          </header>
-          <div className="title">
-            <h1>{this.props.welcome}</h1>
-          </div>
+          </header>      
           <main className="mainContainer">
-            <div className="listItem1">
-              <Presentation
-                width="500px"
+            <h1>{this.props.welcome}</h1>
+            <div className="graphContainer">
+              <Presentation 
+                className="pie"
                 title="Your Sales"
                 picture={chartIcon}
                 selectedListItem={0}
               />
-            </div>
-            <div className="listItem2">
               <Presentation
+                className="line"
                 title="Report"
                 picture={graphIcon}
                 selectedListItem={0}
               />
             </div>
             <div className="mainContainerRow2">
-              <div className="listItem3">
-                <InfoCard
-                  typeOfCard={TYPES.TASKS}
-                  cardTitle="Tasks"
-                  badges={tasksBadges}
-                  data={tasks}
-                />
-              </div>
-              <div className="listItem4">
-                <InfoCard
-                  typeOfCard={TYPES.MESSAGES}
-                  cardTitle="Messages"
-                  badges={messagesBadges}
-                  data={messages}
-                />
-              </div>
-              <div className="listItem5">
-                <InfoCard
-                  typeOfCard={TYPES.ACTIVITY}
-                  cardTitle="Activity"
-                  badges={activityBadges}
-                  data={activities}
-                />
-              </div>
+              <InfoCard
+                typeOfCard={TYPES.TASKS}
+                cardTitle="Tasks"
+                badges={tasksBadges}
+                data={tasks}
+              />
+              <InfoCard
+                typeOfCard={TYPES.MESSAGES}
+                cardTitle="Messages"
+                badges={messagesBadges}
+                data={messages}
+              />
+              <InfoCard
+                typeOfCard={TYPES.ACTIVITY}
+                cardTitle="Activity"
+                badges={activityBadges}
+                data={activities}
+              />
             </div>
           </main>
         </div>

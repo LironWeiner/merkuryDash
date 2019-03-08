@@ -30,13 +30,9 @@ class Presentation extends Component {
       this.setState({selectedListItem: id , isDropdownVisible: !this.state.isDropdownVisible});
   }
 
-  render() {
-    const theStyle = {
-      width: this.props.width
-    };
-
+  render() {   
     return (
-      <div style={theStyle} className="presentationContainer">
+      <div className={`presentationContainer ${this.props.className}`}>
         <div className="presentationRow1">
           <h2>{this.props.title}</h2>
           <div className="presentationDropButton">

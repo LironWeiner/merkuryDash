@@ -16,11 +16,9 @@ const InfoCard = props => {
         })}
       </div>
       <div className="infoCardRow2">
-        {props.data.map((item, index) => {
-          const isFirst = index === 0 ? true : false;
+        {props.data.map(item => {
           return (
             <InfoCardItem
-              isFirstItem={isFirst}
               typeOfCard={props.typeOfCard}
               key={item.id}
               data={item}

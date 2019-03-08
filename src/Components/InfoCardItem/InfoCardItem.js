@@ -3,6 +3,7 @@ import timerIcon from "../../Icons/timericon.png";
 import redtimerIcon from "../../Icons/tasks/redtimericon.png";
 import optionsWheelIcon from "../../Icons/messages/optionswheelicon.png";
 import respondIcon from "../../Icons/messages/respondicon.png";
+import dotsoptionIcon from "../../Icons/tasks/dotsoptionsicon.png";
 import "./InfoCardItem.css";
 
 export const TYPES = {
@@ -13,9 +14,8 @@ export const TYPES = {
 
 export const InfoCardItem = props => {
   const activityCardHandler = () => {
-    const paddingTopStyle = props.isFirstItem ? { paddingTop: "28px" } : null;
     return (
-      <div style={paddingTopStyle} className="activityCardItenContainer">
+      <div className="activityCardItemContainer">
         <div className="personImageContainer">
           <img alt="icon" src={props.data.personIcon} />
           {props.listLength - 1 === props.data.id ? null : (
@@ -72,19 +72,19 @@ export const InfoCardItem = props => {
         </div>
         <div className="taskCardItemTextContainer">
           <span>{props.data.text}</span>
-          {
-              props.data.delay ?
-                <div className="taskCardItemRow2">
-                  <img alt="timer" src={redtimerIcon} />
-                  <span className="delayTask">{props.data.time}</span>
-                </div>
-              :
-                <div className="taskCardItemRow2">
-                  <img alt="timer" src={timerIcon} />
-                  <span>{props.data.time}</span>
-                </div>
-          }
+          {props.data.delay ? (
+            <div className="taskCardItemRow2">
+              <img alt="timer" src={redtimerIcon} />
+              <span className="delayTask">{props.data.time}</span>
+            </div>
+          ) : (
+            <div className="taskCardItemRow2">
+              <img alt="timer" src={timerIcon} />
+              <span>{props.data.time}</span>
+            </div>
+          )}
         </div>
+        <img className="tasksOptions" alt="options" src={dotsoptionIcon} />
       </div>
     );
   };

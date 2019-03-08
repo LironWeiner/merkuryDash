@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   border: 1px solid #d4d9e3;
-  padding: 5px 30px;  
-  margin-bottom: 40px;     
+  justify-content: center;
 }
 .presentationContainer h2 {
   color: #8492af;
@@ -11,14 +10,39 @@
 }
 .presentationRow1 {
   display: flex;
+  margin: 2% 5%;
 }
 .presentationDropButton {
   margin: auto 0 auto auto;
 }
 .presentationRow2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   z-index: -1;
-  margin-bottom: 0.83em;
 }
-.presentationRow2 img {  
-  
+.presentationRow2 img {
+  width: 75%;
+  object-fit: scale-down;
+  padding-bottom: 5%;  
+}
+
+.pie {
+  width: 40%;
+}
+.line {
+  width: 58%;
+}
+
+@media screen and (max-width: 568px) {
+  .presentationContainer {
+    width: 100%;
+    max-height: none;
+    margin-bottom: 2.5%;
+  }
+  .pie,
+  .line {
+    width: 100%;
+  }
 }

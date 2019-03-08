@@ -10,27 +10,26 @@
   margin-top: 40px;
   font-weight: 600;
 }
-.title {
-  align-self: center;
-}
 .mainContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  
+  padding: 0 2.5%;
 }
-.listItem1,
-.listItem2,
-.listItem3,
-.listItem4,
-.listItem5,
-.mainContainerRow2 {
+.mainContainerRow2,
+.graphContainer {
   display: flex;
-  margin-right: 30px;   
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2.5%;
 }
 
 @media screen and (max-width: 568px) {
   .layoutContainer {
     width: fit-content;
-  }  
+  }
+  .mainContainerRow2,
+  .graphContainer {
+    flex-direction: column;
+}
 }

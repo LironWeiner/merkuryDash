@@ -1,15 +1,15 @@
 /* Activity card classes */
-.activityCardItenContainer {
+.activityCardItemContainer {
   display: flex;
-  padding: 0 25px;
+  padding: 0 25px;    
+  max-width: 100%;
   font-size: 14px;
-  font-weight: 500;
-  /* align-items: center; */
+  font-weight: 500;  
 }
 .activityCardItemTextContainer {
   display: flex;
   flex-direction: column;
-  justify-content: baseline;  
+  justify-content: baseline;
 }
 .activityCardItemText {
   margin-bottom: 10px;
@@ -29,14 +29,13 @@
   display: flex;
 }
 .activityCardItemTimeContainer img {
-  margin-right: 6px;
-  padding-bottom: 30px;
+  margin-right: 6px;  
 }
-.timeLine {
+.timeLine { 
   width: 1px;
   margin: auto;
   border-left: 1px solid #dadee7;
-  height: 50px;
+  height: 60px;
   z-index: 1;
 }
 /* END of Activity card classes */
@@ -90,12 +89,10 @@
 /* Tasks card classes */
 .tasksCardItemContainer {
   display: flex;
-  border-bottom: 1px solid #d4d9e3;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  padding: 35px 0;
-  margin: auto;
+  border-bottom: 1px solid #d4d9e3;  
+  height: 100%;    
+  align-items: center;  
+  padding: 5px 25px;  
 }
 
 .taskBadge {
@@ -130,5 +127,10 @@
 }
 .taskCardItemRow2 img {
   margin-right: 6px;
+}
+.tasksOptions{
+  margin-left: auto;
+  margin-right: 10px;
+  cursor: pointer;
 }
 /* END of Tasks card classes */
